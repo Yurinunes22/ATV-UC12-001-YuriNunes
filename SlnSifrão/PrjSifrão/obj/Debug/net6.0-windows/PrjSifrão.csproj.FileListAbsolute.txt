@@ -1,0 +1,17 @@
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\bin\Debug\net6.0-windows\PrjSifrão.exe
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\bin\Debug\net6.0-windows\PrjSifrão.deps.json
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\bin\Debug\net6.0-windows\PrjSifrão.runtimeconfig.json
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\bin\Debug\net6.0-windows\PrjSifrão.dll
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\bin\Debug\net6.0-windows\PrjSifrão.pdb
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\obj\Debug\net6.0-windows\PrjSifrão.csproj.AssemblyReference.cache
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\obj\Debug\net6.0-windows\PrjSifrão.Form1.resources
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\obj\Debug\net6.0-windows\PrjSifrão.csproj.GenerateResource.cache
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\obj\Debug\net6.0-windows\PrjSifrão.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\obj\Debug\net6.0-windows\PrjSifrão.AssemblyInfoInputs.cache
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\obj\Debug\net6.0-windows\PrjSifrão.AssemblyInfo.cs
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\obj\Debug\net6.0-windows\PrjSifrão.csproj.CoreCompileInputs.cache
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\obj\Debug\net6.0-windows\PrjSifrão.dll
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\obj\Debug\net6.0-windows\refint\PrjSifrão.dll
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\obj\Debug\net6.0-windows\PrjSifrão.pdb
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\obj\Debug\net6.0-windows\PrjSifrão.genruntimeconfig.cache
+C:\Users\yuri.njesus\source\repos\ATV-UC12-001-YuriNunes\SlnSifrão\PrjSifrão\obj\Debug\net6.0-windows\ref\PrjSifrão.dll
