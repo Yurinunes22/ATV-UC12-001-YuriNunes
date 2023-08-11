@@ -4,7 +4,7 @@ namespace PrjSifrão
 {
     public partial class Form1 : Form
     {
-        Correntista correntista;    
+        Correntista correntista;
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +22,11 @@ namespace PrjSifrão
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            correntista.VerificarSeCorrentistaMaior();
+            Correntista correntista = new Correntista(txtId.Text, txtNome.Text, txtCpf.Text, dtDataNasc.Text, txtRendaMensal.Text);
+            if (correntista.VerificarSeCorrentistaMaior)
+            {
+
+            }
         }
     }
 }

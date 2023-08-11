@@ -31,7 +31,6 @@
             txtId = new TextBox();
             txtNome = new TextBox();
             txtCpf = new TextBox();
-            txtDataNasc = new TextBox();
             txtRendaMensal = new TextBox();
             lblId = new Label();
             lblNome = new Label();
@@ -39,6 +38,8 @@
             lblDataNasc = new Label();
             lblRendaMensal = new Label();
             btnCadastrar = new Button();
+            lblTipoConta = new Label();
+            dtDataNasc = new DateTimePicker();
             SuspendLayout();
             // 
             // txtId
@@ -61,13 +62,6 @@
             txtCpf.Name = "txtCpf";
             txtCpf.Size = new Size(208, 23);
             txtCpf.TabIndex = 2;
-            // 
-            // txtDataNasc
-            // 
-            txtDataNasc.Location = new Point(158, 132);
-            txtDataNasc.Name = "txtDataNasc";
-            txtDataNasc.Size = new Size(129, 23);
-            txtDataNasc.TabIndex = 3;
             // 
             // txtRendaMensal
             // 
@@ -133,11 +127,29 @@
             btnCadastrar.UseVisualStyleBackColor = true;
             btnCadastrar.Click += btnCadastrar_Click;
             // 
+            // lblTipoConta
+            // 
+            lblTipoConta.AutoSize = true;
+            lblTipoConta.Location = new Point(36, 215);
+            lblTipoConta.Name = "lblTipoConta";
+            lblTipoConta.Size = new Size(62, 15);
+            lblTipoConta.TabIndex = 11;
+            lblTipoConta.Text = "TipoConta";
+            // 
+            // dtDataNasc
+            // 
+            dtDataNasc.Location = new Point(158, 132);
+            dtDataNasc.Name = "dtDataNasc";
+            dtDataNasc.Size = new Size(200, 23);
+            dtDataNasc.TabIndex = 12;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(437, 255);
+            Controls.Add(dtDataNasc);
+            Controls.Add(lblTipoConta);
             Controls.Add(btnCadastrar);
             Controls.Add(lblRendaMensal);
             Controls.Add(lblDataNasc);
@@ -145,7 +157,6 @@
             Controls.Add(lblNome);
             Controls.Add(lblId);
             Controls.Add(txtRendaMensal);
-            Controls.Add(txtDataNasc);
             Controls.Add(txtCpf);
             Controls.Add(txtNome);
             Controls.Add(txtId);
@@ -160,7 +171,6 @@
         private TextBox txtId;
         private TextBox txtNome;
         private TextBox txtCpf;
-        private TextBox txtDataNasc;
         private TextBox txtRendaMensal;
         private Label lblId;
         private Label lblNome;
@@ -168,5 +178,7 @@
         private Label lblDataNasc;
         private Label lblRendaMensal;
         private Button btnCadastrar;
+        private Label lblTipoConta;
+        private DateTimePicker dtDataNasc;
     }
 }

@@ -9,73 +9,83 @@ namespace PrjSifrão.Classes
     public class Correntista
     {
 
-        private int _id;
-        public int Id
-        {
-            get
-            {
-                return this._id;
-            }
-            set
-            {
-                if (value <= 0)
-                {
-                    throw new Exception("Id não pode ser menor que zero!");
-                }
-                else
-                {
-                    this._id = value;
-                }
-            }
 
-        }
 
+        public int IdCorrentista { get; set; }
         public string Nome { get; set; }
         public int Cpf { get; set; }
         public DateTime DataNasc { get; set; }
         public double RendaMensal { get; set; }
-
+        //static int TotalCliente { get; set; }
 
         public Correntista()
         {
-          
+          //IdCorrentista = IdCorrentista + 1;    
          
         }
 
-        public Correntista(int id, string nome, int cpf, DateTime dataNasc, double rendamensal )
-        { 
-         this.Id = id;
-         this.Nome = nome;
-         this.Cpf = cpf;
-         this.DataNasc = dataNasc;
-         this.RendaMensal = rendamensal;
+        public Correntista( int idcorrentista, string nome, int cpf, DateTime dataNasc, double rendamensal )
+        {
+            //TotalCliente = TotalCliente + 1;
+            //IdCorrentista = TotalCliente;
+          IdCorrentista = idcorrentista; 
+         Nome = nome;
+         Cpf = cpf;
+         DataNasc = dataNasc;
+         RendaMensal = rendamensal;
         
         }
 
-        public int VerificarSeCorrentistaMaior()
+        public bool VerificarSeCorrentistaMaior()
         {
-            int aux = Convert.ToInt32(DateTime.Now - DataNasc);
-            if (aux <18)
+
+            int idade = DateTime.Now.Year - this.DataNasc.Year;  
+
+            if (DateTime.Now.Month < this.DataNasc.Month || (DateTime.Now.Month == this.DataNasc.Month && DateTime.Now.Day < this.DataNasc.Day))
             {
-                MessageBox.Show("Menor de Idade");
+                idade = idade - 1;
+            }
+
+            if (idade>=18)
+            {
+                return true;
             }
             else
             {
-                MessageBox.Show("maior de idade");
+                    return false;   
+            }
+
+        } 
+
+
+
+
+        /*public double RetornarPerfilCliente (double rendamensal)  
+        {
+            if (rendamensal <= 3000)
+            {
+                MessageBox.Show("Silver");
+            }
+            else if (rendamensal >=3000.01 && rendamensal <= 5000)
+            {
+                MessageBox.Show("Gold");
+            }
+
+            else if (rendamensal >= 5000.01 && rendamensal <= 10000)
+            {
+                MessageBox.Show("Diamond");
+            }
+            else
+            {
+                MessageBox.Show("Black");
             }
 
 
-            return aux;
-         
-         
-          
-         
-        }
 
 
-
-
-
+                    return rendamensal;
+        }*/
+       
 
 
 
