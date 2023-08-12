@@ -12,10 +12,49 @@ namespace PrjSifrão.Classes
 
 
         public int IdCorrentista { get; set; }
-        public string Nome { get; set; }
-        public int Cpf { get; set; }
+        private string _nome;
+        public string Nome
+        {
+            get
+            {
+                return _nome;
+
+
+            }
+            set
+            {
+                if (value == String.Empty)
+                {
+                    throw new Exception("O nome deve ser preenchido corretamente");
+                }
+            }
+        }
+        private string _cpf;
+        public string Cpf
+        {
+            get
+            {
+                return _cpf;
+            }
+            set
+            {
+                if (value == String.Empty || Cpf.Length != 11) 
+                {
+                    throw new Exception("Preencha o CPF corretamente");
+                }
+            }
+        }
+            
+            
+
+            
+    
         public DateTime DataNasc { get; set; }
-        public double RendaMensal { get; set; }
+        private double _dataNasc;   
+        public double RendaMensal 
+        { 
+            get 
+                set; }
         //static int TotalCliente { get; set; }
 
         public Correntista()
@@ -24,7 +63,7 @@ namespace PrjSifrão.Classes
          
         }
 
-        public Correntista( int idcorrentista, string nome, int cpf, DateTime dataNasc, double rendamensal )
+        public Correntista( int idcorrentista, string nome, string cpf, DateTime dataNasc, double rendamensal )
         {
             //TotalCliente = TotalCliente + 1;
             //IdCorrentista = TotalCliente;
@@ -57,36 +96,39 @@ namespace PrjSifrão.Classes
 
         } 
 
+        
 
 
-
-        /*public double RetornarPerfilCliente (double rendamensal)  
+        public string  RetornarPerfilCliente ()  
         {
-            if (rendamensal <= 3000)
+            if (this.RendaMensal <= 3000)
             {
-                MessageBox.Show("Silver");
+                return  "Silver";
+                
             }
-            else if (rendamensal >=3000.01 && rendamensal <= 5000)
+            else if (this.RendaMensal >= 3000.01 && this.RendaMensal <= 5000)
             {
-                MessageBox.Show("Gold");
+                return  "Gold";
             }
 
-            else if (rendamensal >= 5000.01 && rendamensal <= 10000)
+            else if (this.RendaMensal >= 5000.01 && this.RendaMensal <= 10000)
             {
-                MessageBox.Show("Diamond");
+                return  "Diamond";
             }
             else
             {
-                MessageBox.Show("Black");
+                return  "Black";
             }
 
 
+        }
 
+        public string MensagemBoasVindas() 
 
-                    return rendamensal;
-        }*/
-       
+        {
+            return $"Olá {this.Nome}!\nSeja Bem Vindo ao Sifrão\nCliente {RetornarPerfilCliente()}";
 
+        }
 
 
 

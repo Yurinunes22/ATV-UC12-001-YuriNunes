@@ -48,6 +48,7 @@
             txtId.Name = "txtId";
             txtId.Size = new Size(208, 23);
             txtId.TabIndex = 0;
+            txtId.TextChanged += txtId_TextChanged;
             // 
             // txtNome
             // 
@@ -55,6 +56,7 @@
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(208, 23);
             txtNome.TabIndex = 1;
+            txtNome.TextChanged += txtNome_TextChanged;
             // 
             // txtCpf
             // 
@@ -62,6 +64,7 @@
             txtCpf.Name = "txtCpf";
             txtCpf.Size = new Size(208, 23);
             txtCpf.TabIndex = 2;
+            txtCpf.TextChanged += txtCpf_TextChanged;
             // 
             // txtRendaMensal
             // 
@@ -69,6 +72,7 @@
             txtRendaMensal.Name = "txtRendaMensal";
             txtRendaMensal.Size = new Size(129, 23);
             txtRendaMensal.TabIndex = 4;
+            txtRendaMensal.TextChanged += txtRendaMensal_TextChanged;
             // 
             // lblId
             // 
