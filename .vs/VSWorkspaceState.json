@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\SlnSifrão",
-    "\\SlnSifrão\\PrjSifrão"
+    "\\SlnSifrão\\PrjSifrão",
+    "\\SlnSifrão\\PrjSifrão\\Classes"
   ],
-  "SelectedNode": "\\SlnSifrão\\PrjSifrão\\Form1.cs",
+  "SelectedNode": "\\SlnSifrão\\PrjSifrão\\Classes\\Correntista.cs",
   "PreviewInSolutionExplorer": false
 }

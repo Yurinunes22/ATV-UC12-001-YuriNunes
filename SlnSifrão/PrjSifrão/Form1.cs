@@ -56,7 +56,7 @@ namespace PrjSifrão
             if (int.TryParse(txtNome.Text, out var Nome))
             {
                 txtNome.Clear();
-            }
+            }   
         }
 
         private void txtId_TextChanged(object sender, EventArgs e)

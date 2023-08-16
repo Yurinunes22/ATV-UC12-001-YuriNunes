@@ -12,6 +12,7 @@ namespace PrjSifrão.Classes
 
 
         public int IdCorrentista { get; set; }
+        public int TotalClientes { get; set; }
         private string _nome;
         public string Nome
         {
@@ -27,7 +28,12 @@ namespace PrjSifrão.Classes
                 {
                     throw new Exception("O nome deve ser preenchido corretamente");
                 }
+                else
+                {
+                    _nome = value;
+                }
             }
+
         }
         private string _cpf;
         public string Cpf
@@ -38,11 +44,17 @@ namespace PrjSifrão.Classes
             }
             set
             {
-                if (value == String.Empty || Cpf.Length != 11) 
+                if (value == String.Empty || value.Length != 11) 
                 {
                     throw new Exception("Preencha o CPF corretamente");
                 }
+                else
+                {
+                    _cpf = value;   
+                }
             }
+
+
         }
             
             
@@ -50,11 +62,27 @@ namespace PrjSifrão.Classes
             
     
         public DateTime DataNasc { get; set; }
-        private double _dataNasc;   
+        private double _rendamensal;
         public double RendaMensal 
-        { 
+        {
             get 
-                set; }
+            {
+                return _rendamensal;
+            }
+
+            set 
+            {
+                if (value <=0.01 )
+                {
+                    throw new Exception("Preencha corretamente a renda mensal");
+                }
+
+                else
+                {
+                    _rendamensal = value;   
+                }
+            }
+        }
         //static int TotalCliente { get; set; }
 
         public Correntista()
@@ -65,9 +93,9 @@ namespace PrjSifrão.Classes
 
         public Correntista( int idcorrentista, string nome, string cpf, DateTime dataNasc, double rendamensal )
         {
-            //TotalCliente = TotalCliente + 1;
-            //IdCorrentista = TotalCliente;
-          IdCorrentista = idcorrentista; 
+         TotalClientes = TotalClientes + 1;
+         IdCorrentista = TotalClientes;
+         IdCorrentista = idcorrentista; 
          Nome = nome;
          Cpf = cpf;
          DataNasc = dataNasc;
