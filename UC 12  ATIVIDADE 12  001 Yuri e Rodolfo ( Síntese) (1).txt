@@ -1,0 +1,59 @@
+resolução da idade button 1  (UC 12 001) 
+
+1- Criou Windows Form com os respectivos nomes e controles.criou um form para cadastrar os correntistas no botão cadastrar, 
+o formulário criou um objeto do tipo correntista ( no windows form)Timespan.idadetext=Convert.to string(dateNascimentoValue; -> converter  o valor data nascimento 
+messagebox.show(Convert.toStringidade text)); -> converter idade if(Convert.to Int 32 (idade text <=17) -> converteu para inteiro 32 para texto menor e igual 17. ao clicar em
+Cadastrar,o formulário criou um objeto do tipo correntista.
+
+2 - Criou uma classe com respectivos Getters and Setters. criou uma classe correntista  get set guardada as informações no formulário.
+
+3 - Criou construtores . criou dois construtores na classe correntista um vázio (simulando o padrão) e outro onde construiu objeto correntista,
+sendo necessário passar todos os parâmetros. Desafio 1 - quando for criado o correntista, o ID  deve ser único e a cada novo correntista criado(com o uso dos construtores),
+será adicionado um número a mais. ex: 1,2,3,4 tal qual temos no banco de dados. Enquanto não conseguir implementar o ID você pode deixá-lo como valor comum que será preenchido 
+pelo usuário. Lembrete: Sabemos que este tipo de controle será feito via banco de dados como estudamos na uc10, a intenção de criarmos aqui é articularmos os conhecimentos estudados para resolver esta questão.
+  
+
+4- Criou um método com retorno. Criou um método chamado VerificarSeCorrentista Maior,que retorne com base na data de nascimento do correntista e na data atual,se o correntista possui mais de 18 anos.Se for maior o retorno deverá ser True, se menor,False. A data de nascimento não precisará ser enviada por parâmetro,ela deve ser coletada do próprio objeto.
+Desafio 2 - para calcular a diferença entre as datas utilizou a internet,existi várias formas de resolver esta questâo. É sabido que o código DateTime.Now 
+retorne a data e hora atual . Não deixando de informar em suas buscas, palavras como "diferença entre datas","C#","DateTime".Caso não consiga implementar, 
+criou uma property(get e set) na classe correntista com a idade . como paliativo.
+
+
+
+5- Criou um método com retorno II. Criou um método chamado RetornarPerfilCliente,que retorne,com base nos rendimentos mensais do mesmo, o tipo de correntista,
+segundo o seguinte critério:
+Renda Correntista         TipoCliente
+até de 3.000,00             Silver
+3.000,01 até 5.000,00       Gold
+5.000,01 até 10.000,00      Diamond
+a partir de 10.000,01       Black
+
+
+6- Reutilizou um método criando em outro método - Reaproveitamento Código. Criou um método chamado MontarMensagemBoasVindas,
+que retornou a mensagem que será usada quando o cliente entrou no app do banco. A mensagem deve ser escrita da seguinte forma olá,
+[nomeCorrentista]! Seja bem vindo ao Sifrão Cliente[tipoCliente]. 
+Utilizou o método RetornarPerfilCliente,criando anteriormente,para exibir o tipo de cliente na mensagem.
+
+
+7- Identificou e tratou erros .Implementou tratamento de erro, no modo do click do botão cadastrar sendo verificado que o correntista é menor de idade.
+Mensagem :sendo observado que o correntista deve possuir ao menos 18 anos de idade para ser registrado no banco.
+
+8- Aplicou todos os tratamentos de erro necessários.
+
+9-Instanciou o objeto e manipulou no formulário. No form, criou dois correntistas e salvou cada um deles em uma variável(correntista01 e correntista 02). 
+Criou dois botôes no form, um deles "Ver correntista01" e outro "Ver correntista02".
+ao clicar nestes botôes um messangebox deve abrir com todos os dados do correntista de acordo com o botão clicado.
+Dica : Para facilitar  criou na classe correntista um método retornando todos os dados do mesmo,assim apenas irá chamar no form.
+
+10- Criou um método  estático. Criou na classe correntista, um método estático que permitiu passar uma data de nascimento como parâmetro, 
+e a partir dela ter um retorno verdadeiro quando o correntista for maior de idade e falso quando for menor. A lógica é 
+parecida com item 4 . chamando o método de VerificarMaioridade. 
+
+Observação: criou  no form id -> label
+nome -> text box
+cpf -> label
+data nascimento-> label
+renda mensal -> listbox
+Cadastrar -> button
+
+depositar -> string 
